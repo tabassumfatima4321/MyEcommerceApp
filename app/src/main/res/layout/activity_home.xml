@@ -31,42 +31,15 @@
         />
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/home_graph_container_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:defaultNavHost="true"
         app:navGraph="@navigation/home_graph"
         android:name="androidx.navigation.fragment.NavHostFragment"
         app:layout_constraintTop_toBottomOf="@+id/user"
-        app:layout_constraintBottom_toTopOf="parent"/>
-  <!--  <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tableLayout"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        app:layout_constraintVertical_bias="0.03"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/user"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:tabBackground="@drawable/tab_color_selector"
-        app:tabIndicatorHeight="0dp"
-        android:backgroundTint="@color/white"
-        app:tabSelectedTextColor="@color/white"
-        app:tabTextColor="@color/yellow">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+       />
 
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Trending" />
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Top Selling" />
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Reviews" />
-
-    </com.google.android.material.tabs.TabLayout>-->
 </androidx.constraintlayout.widget.ConstraintLayout>
