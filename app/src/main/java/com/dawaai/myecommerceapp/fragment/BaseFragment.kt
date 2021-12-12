@@ -1,4 +1,4 @@
-package com.dawaai.myecommerceapp.activity
+package com.dawaai.myecommerceapp.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater

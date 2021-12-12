@@ -1,4 +1,4 @@
-package com.dawaai.myecommerceapp.activity
+package com.dawaai.myecommerceapp.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -16,12 +16,12 @@ class ProductAdapter (private val context: Context,
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): ProductAdapter.ItemViewHolder {
+    ): ItemViewHolder {
         val  binding = RowProductBinding.inflate(LayoutInflater.from(context), parent, false)
         return ItemViewHolder(binding)
     }
 
-    override fun onBindViewHolder(holder: ProductAdapter.ItemViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         holder.bindItems(products[position])
     }
 

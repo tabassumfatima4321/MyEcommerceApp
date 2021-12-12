@@ -1,4 +1,4 @@
-package com.dawaai.myecommerceapp.activity
+package com.dawaai.myecommerceapp.remotedatasource
 
 import com.dawaai.myecommerceapp.helper.RETROFIT_INS
 import com.dawaai.myecommerceapp.network.RetrofitService

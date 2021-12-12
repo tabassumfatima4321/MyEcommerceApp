@@ -1,13 +1,7 @@
-package com.dawaai.myecommerceapp.activity
+package com.dawaai.myecommerceapp.fragment
 
-import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import com.dawaai.myecommerceapp.R
 import com.dawaai.myecommerceapp.databinding.FragmentFavoriteItemBinding
-import com.dawaai.myecommerceapp.databinding.FragmentProductsBinding
+import com.dawaai.myecommerceapp.fragment.BaseFragment
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

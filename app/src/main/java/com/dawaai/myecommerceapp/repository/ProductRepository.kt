@@ -1,5 +1,6 @@
-package com.dawaai.myecommerceapp.activity
+package com.dawaai.myecommerceapp.repository
 
+import com.dawaai.myecommerceapp.remotedatasource.ProductRemoteDataSource
 import javax.inject.Inject
 
 class ProductRepository  @Inject constructor (

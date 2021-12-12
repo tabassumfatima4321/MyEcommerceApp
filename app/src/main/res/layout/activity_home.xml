@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".activity.HomeActivity">
+
+    <ImageView
+        android:id="@+id/user"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/ic_baseline_person_24"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_baseline_shopping_cart_24"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintTop_toTopOf="@+id/user"
+        app:layout_constraintBottom_toBottomOf="@+id/user"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/home_graph_container_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/home_graph"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        app:layout_constraintTop_toBottomOf="@+id/user"
+        app:layout_constraintBottom_toTopOf="parent"/>
+  <!--  <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintVertical_bias="0.03"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:tabBackground="@drawable/tab_color_selector"
+        app:tabIndicatorHeight="0dp"
+        android:backgroundTint="@color/white"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextColor="@color/yellow">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trending" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top Selling" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reviews" />
+
+    </com.google.android.material.tabs.TabLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

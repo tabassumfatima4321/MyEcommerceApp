@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_graph.xml"
+    app:startDestination="@id/productsFragment2">
+    <fragment
+        android:id="@+id/productsFragment2"
+        android:name="com.dawaai.myecommerceapp.fragment.ProductsFragment"
+        android:label="ProductsFragment" >
+   <!--     <action
+            android:id="@+id/action_productsFragment2_to_productDetailFragment"
+            app:destination="@id/productDetailFragment" >
+            <argument
+                android:name="pid"
+                android:defaultValue="0"
+                app:argType="string"
+                />
+        </action>-->
+        <action
+            android:id="@+id/action_productsFragment2_to_bottomSheetCartFragment"
+            app:destination="@id/bottomSheetCartFragment" >
+            <argument
+                android:name="product"
+                app:argType="com.dawaai.myecommerceapp.model.Product" />
+        </action>
+    </fragment>
+    <dialog
+        android:id="@+id/bottomSheetCartFragment"
+        android:name="com.dawaai.myecommerceapp.fragment.BottomSheetCartFragment"
+        android:label="BottomSheetCartFragment" >
+    <argument
+        android:name="product"
+        app:argType="com.dawaai.myecommerceapp.model.Product" />
+    </dialog>
+    <!--    <fragment
+            android:id="@+id/productDetailFragment"
+            android:name="com.dawaai.myecommerceapp.activity.ProductDetailFragment"
+            android:label="fragment_product_detail"
+            tools:layout="@layout/fragment_product_detail" >
+            <argument
+                android:name="pid"
+                android:defaultValue="0"
+                app:argType="string"
+                />
+        </fragment>-->
+</navigation>

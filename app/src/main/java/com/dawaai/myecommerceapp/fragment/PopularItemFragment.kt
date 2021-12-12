@@ -1,10 +1,12 @@
-package com.dawaai.myecommerceapp.activity
+package com.dawaai.myecommerceapp.fragment
 
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.dawaai.myecommerceapp.adapter.ProductAdapter
+import com.dawaai.myecommerceapp.viewmodel.ProductViewModel
 import com.dawaai.myecommerceapp.databinding.FragmentPopularItemBinding
 import com.dawaai.myecommerceapp.model.Product
 import dagger.hilt.android.AndroidEntryPoint

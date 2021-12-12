@@ -1,8 +1,9 @@
-package com.dawaai.myecommerceapp.activity
+package com.dawaai.myecommerceapp.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.dawaai.myecommerceapp.repository.ProductRepository
 import com.dawaai.myecommerceapp.model.*
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineScope
