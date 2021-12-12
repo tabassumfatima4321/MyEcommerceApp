@@ -17,13 +17,28 @@ class BottomSheetCartFragment : BaseBottomSheetFragment<FragmentBottomSheetCartB
         product=args.product
         initViews()
     }
-    fun initViews()
+    private fun initViews()
     {
         product?.let {
             binding.tvTitle.text=it.title
             binding.tvDesc.text=it.description
-            binding.tvPrice.text=it.price.toString()
+            binding.tvPrice.text="$"+it.price.toString()
             it.image?.let { img -> binding.ivSKU.loadImage(img,requireContext()) }
+        }
+        setOnClickListener()
+    }
+    private fun setOnClickListener()
+    {
+        binding.btnAddSKU.setOnClickListener {
+            val txt=binding.tvQuantity.text.toString()
+            if(txt.isNotEmpty()) { binding.tvQuantity.setText((txt.toInt() + 1).toString()) }
+        }
+        binding.btnSubSKU.setOnClickListener {
+            val txt=binding.tvQuantity.text.toString()
+            if(txt.isNotEmpty() && txt.toInt()>0)
+            {
+                binding.tvQuantity.setText((txt.toInt()-1).toString())
+            }
         }
     }
 }
