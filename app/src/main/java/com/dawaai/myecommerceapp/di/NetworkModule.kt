@@ -32,7 +32,9 @@ object NetworkModule {
     @Singleton
     @Provides
     @Named(OK_HTTP)
-    fun providesOkHttpClient(httpLoggingInterceptor: HttpLoggingInterceptor): OkHttpClient =
+    fun providesOkHttpClient(httpLoggingInterceptor:
+                             HttpLoggingInterceptor):
+            OkHttpClient =
         OkHttpClient
             .Builder()
             .addInterceptor(httpLoggingInterceptor)

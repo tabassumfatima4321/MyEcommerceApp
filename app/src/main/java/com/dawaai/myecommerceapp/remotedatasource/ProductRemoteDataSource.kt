@@ -6,7 +6,8 @@ import javax.inject.Inject
 import javax.inject.Named
 
 
-class ProductRemoteDataSource  @Inject constructor (@Named(RETROFIT_INS) private  val apiService: RetrofitService)
+class ProductRemoteDataSource  @Inject constructor (
+    @Named(RETROFIT_INS) private  val apiService: RetrofitService)
 {
     suspend fun getProducts() = apiService.getProducts()
 
